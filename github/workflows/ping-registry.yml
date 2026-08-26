@@ -1,0 +1,16 @@
+name: Ping Public Registry Indexers
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  ping-indexers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Glama Crawler
+        run: |
+          curl -s -X POST "https://glama.ai/api/mcp/index" \
+            -H "Content-Type: application/json" \
+            -d '{"url":"https://raw.githubusercontent.com/datagoldbrand/datagoldmine-mcp-manifest/main/server.json"}' || true
