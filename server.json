@@ -1,0 +1,16 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "io.github.datagoldbrand/datagoldmine-hft",
+  "title": "DataGoldMine HFT Context Broker",
+  "description": "Autonomous real-time market data broker via x402 on Base.",
+  "version": "1.0.0",
+  "websiteUrl": "https://data-goldbrand.vercel.app",
+  "repository": {
+    "url": "https://github.com/datagoldbrand/datagoldmine-mcp-manifest",
+    "source": "github"
+  },
+  "transport": {
+    "type": "http",
+    "url": "https://data-goldbrand.vercel.app/api/v1/mcp"
+  }
+}
