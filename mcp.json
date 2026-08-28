@@ -1,0 +1,13 @@
+{
+  "name": "DataGoldMine HFT Context Broker",
+  "description": "High-frequency developer context and real-time scraping engine for autonomous AI coding agents.",
+  "version": "1.0.0",
+  "type": "remote",
+  "transport": "http",
+  "endpoints": {
+    "discovery": "https://data-goldbrand.vercel.app/.well-known/mcp-discovery",
+    "harvest": "https://data-goldbrand.vercel.app/api/v1/harvest",
+    "stats": "https://data-goldbrand.vercel.app/api/v1/stats"
+  },
+  "schema": "https://data-goldbrand.vercel.app/openapi.json"
+}
